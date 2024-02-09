@@ -35,7 +35,7 @@ Before running the application, ensure you have the following:
 3. Run the script:
 
    ```bash
-   python chatbot.py
+   python main.py
    ```
 
 4. The application window will appear. Enter your text in the input field and click the "Generate" button to initiate a conversation with the AI chatbot.
