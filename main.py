@@ -72,10 +72,10 @@ def transcribe_to_speech(text):
         print(f"API request failed with status code {response.status_code}")
 
 
-# Create a StringVar to hold user input
+# StringVar pro uchovani uzivatelskeho vstupu
 user_input = StringVar()
 
-# Create a label and entry field for user input
+# label a entry field pro vypsani uzivatelsky vstup
 (Label(root, text="Enter your text:",
        bg="white",
        fg="black", )
@@ -88,8 +88,8 @@ Label(root, textvariable=status_message, bg="white", fg="black").pack()
 
 Label(root, textvariable=ai_response, bg="white", fg="black").pack()
 
-# Create a button to generate content
+#buttonek pro generovani obsahu
 Button(root, text="Generate", command=generate_content).pack()
 
-# Start the main loop
+# main loop
 root.mainloop()
