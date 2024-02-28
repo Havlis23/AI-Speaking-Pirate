@@ -23,6 +23,13 @@ Before running the application, ensure you have the following:
    pip install openai requests pygame
    ```
 
+   ```bash
+   pip install -r requirements.txt
+   export OPENAI_API_KEY="your_openai_api_key"
+   export XI_API_KEY="your_elevenlabs_api_key"
+   python chatbot.py
+   ```
+
 ## Usage
 
 1. Open the Python script in your preferred editor (e.g., PyCharm).
@@ -59,6 +66,25 @@ Before running the application, ensure you have the following:
 - Ensure that you have an internet connection to make API requests.
 
 ## Acknowledgments
+## Dependencies
+- `Tkinter` for GUI
+- `OpenAI` library for GPT-3 integration
+- `requests` for making API requests
+- `pygame` for playing audio files
+- `dotenv` for loading environment variables
+
+## Setup
+1. Install the required dependencies using `pip install -r requirements.txt`
+2. Sign up for OpenAI API and Eleven Labs API to get the necessary API keys
+3. Create a `.env` file and add the following environment variables:
+   - `OPENAI_API_KEY` (OpenAI API key)
+   - `XI_API_KEY` (Eleven Labs API key)
+
+## Usage
+1. Run the Python script and the GUI window will open.
+2. Enter your text in the input field.
+3. Click on the "Generate" button to see the chatbot's response.
+4. The chatbot's response will also be transcribed to speech and played as an audio
 
 - This application uses the OpenAI and Eleven Labs APIs to provide advanced natural language processing and text-to-speech capabilities.
 
