@@ -30,7 +30,7 @@ def generate_content():
              "content": "Jsi pirát a odpovídáš jako pirát, říkáš hodně vtipů a snažíš se být co nejvíce vtipný. Dávej si pozor na skloňování v češkém jazyce. "},
             {"role": "user", "content": user_input.get()}
         ],
-        max_tokens=515  # The maximum number of tokens to generate in the completion
+        max_tokens=515  # maximalni pocet tokenu, velmi dulezite
     )
     print("clovek: ", user_input.get())
     content = completion.choices[0].message.content
@@ -51,7 +51,7 @@ def transcribe_to_speech(text):
     headers = {
         "Accept": "audio/mpeg",
         "Content-Type": "application/json",
-        "xi-api-key": "207368e9352fe73d5a1780e2b178294e"
+        "xi-api-key": os.getenv("XI_API_KEY")
     }
     data = {
         "text": text,  # Use the content as the value for the "text" field
